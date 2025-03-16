@@ -1,1 +1,56 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+// Variables
+$primary-color: #343a40;
+$secondary-color: #6c757d;
+$header-height: 60px;
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Styles globaux
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: unset;
+}
+
+.header {
+  @include flex-center;
+  background-color: $primary-color;
+  color: white;
+  height: $header-height;
+  padding: 0 1rem;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+}
+
+.pdf-viewer {
+  flex: 1;
+  border-right: 1px solid #ddd;
+  padding: 1rem;
+}
+
+.tabs-section {
+  flex: 1;
+  padding: 1rem;
+}
