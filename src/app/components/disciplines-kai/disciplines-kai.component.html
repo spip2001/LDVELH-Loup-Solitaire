@@ -1,0 +1,5 @@
+<ol>
+    @for (discipline of feuilleAventureService.disciplines_kai; track $index) {
+        <li [title]="discipline.description">{{ discipline.nom }}</li>
+    }
+</ol>

@@ -1,0 +1,26 @@
+<!-- feuille-aventure.component.html -->
+<div class="feuille-aventure">
+  <h2>Feuille d'Aventure</h2>
+  <div class="caracteristiques">
+    <div>
+      <label>Endurance :</label>
+      <span>{{ feuilleAventureService.endurance }}</span>
+    </div>
+    <div>
+      <label>Habileté :</label>
+      <span>{{ feuilleAventureService.habilete }}</span>
+    </div>
+  </div>
+  <div class="disciplines">
+    <h3>Disciplines Kaï</h3>
+    <app-disciplines-kai></app-disciplines-kai>
+  </div>
+  <div class="armes">
+    <h3>Armes</h3>
+    <ul>
+        @for (arme of feuilleAventureService.armes; track $index) {
+            <li>{{ arme }}</li>
+        }
+    </ul>
+  </div>
+</div>
