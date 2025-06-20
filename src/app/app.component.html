@@ -9,31 +9,21 @@
   <div class="main-content">
     <div class="pdf-viewer">
       <!-- Composant pour afficher le PDF -->
-       pdf
-       <!--
-      <app-pdf-viewer [src]="'chemin/vers/votre.pdf'"></app-pdf-viewer>
-    -->
+      <iframe width="100%" height="100%" src="pdf/LS01.pdf"> </iframe>
     </div>
 
     <div class="tabs-section">
       <mat-tab-group>
         <mat-tab label="Feuille d'Aventure">
-          
-            Feuille d'aventure
-            <!--<app-feuille-aventure></app-feuille-aventure> -->
-          
+          <app-feuille-aventure></app-feuille-aventure>
         </mat-tab>
         <mat-tab label="Combats">
-          
-            Combats
-            <!--<app-resolveur-combats></app-resolveur-combats> -->
-          
+          Combats
+          <!--<app-resolveur-combats></app-resolveur-combats> -->
         </mat-tab>
         <mat-tab label="Notes">
-          
-            Notes
-            <!-- <app-notes-joueur></app-notes-joueur> -->
-          
+          Notes
+          <!-- <app-notes-joueur></app-notes-joueur> -->
         </mat-tab>
       </mat-tab-group>
     </div>
