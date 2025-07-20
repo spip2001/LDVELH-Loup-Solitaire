@@ -17,6 +17,9 @@ export class FeuilleAventureService {
   private _endurance: number = 20;
   private _habilete: number = 10;
   private _armes: string[] = ['Épée'];
+  private _objets: string[] = ['Potion de guérison'];
+
+  
 
   constructor() { }
 
@@ -50,6 +53,14 @@ export class FeuilleAventureService {
 
   get disciplines_kai(): DisciplineKai[] {
     return this._disciplines_kai;
+  }
+
+  get objets(): string[] {
+    return this._objets;
+  }
+
+  set objets(value: string[]) {
+    this._objets = value;
   }
 
   

@@ -23,4 +23,12 @@
         }
     </ul>
   </div>
+  <div class="objets">
+    <h3>Objets</h3>
+    <ul>
+        @for (objet of feuilleAventureService.objets; track $index) {
+            <li>{{ objet }}</li>
+        }
+    </ul>
+  </div>
 </div>
